@@ -7,6 +7,7 @@ body{
 }
 
 .banner{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,4 +37,57 @@ h1{
     cursor: pointer;
     text-transform: uppercase;
     margin-bottom: 40px;
+}
+
+.modal-overlay{
+    position: fixed;
+   left: 190px;
+    bottom: 405px;
+    background-color: white;
+    width: 520px;
+    height: 220px;
+    border-radius: 20px;
+    display: grid;
+  place-items: center;
+ visibility: hidden;
+ z-index: -10;
+}
+
+
+
+
+
+.modal-container{
+    text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+    
+    
+
+}
+
+.close-btn{
+    position: absolute;
+  top:-75px;
+  right:-150px;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: rgb(255, 6, 6);
+  padding-right: 20px;
+  padding-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  
+}
+
+h3{
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+
+.close-btn:hover{
+    transform: scale(1.5);
+    transition: 0.5s ease;
 }
